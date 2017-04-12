@@ -1,0 +1,59 @@
+/*
+ * media query sizes based on bootstrap
+ * CSS:
+ * @media screen and (max-width: $screen-sm-max) {
+ *    display: none;
+ * }
+ * 
+ */
+$screen-xs-min: 480px;
+$screen-xs-max: 479px;
+$screen-sm-min: 768px;
+$screen-sm-max: 767px;
+$screen-md-min: 992px;
+$screen-md-max: 991px;
+$screen-lg-min: 1200px;
+$screen-lg-max: 1199px;
+
+
+
+/**
+ * colors
+ * 
+ */
+$color-deep-blue: #406487;
+$color-deep-blue-hover: #2F506B;
+$color-vibe-blue: #1E88E5;
+$color-vibe-blue-hover: #2066E2;
+
+
+$color-galaxy: #484D53;
+$color-stone: #90A4AE;
+$color-neutral: #B0BEC5;
+$color-soft: #ECEFF1;
+
+$color-red: #f55725;
+$color-green: #78c778;
+$color-yellow: #ffff66;
+
+$main-text: #666;
+$site-dark-blue: #022E51;
+$color-btn-grey: #e6e6e6;
+$color-btn-border-grey: #adadad;
+
+$alt-btn-dark-blue:#286090;
+$alt-btn-border:#204d74;
+
+
+
+
+
+/**
+ * size variables
+ */
+$margin: 15px; // bootstrap's default
+$footer-height: $margin*17;
+$font-1x: 16px;
+$font-2x: 28.88px;
+$font-3x: 41.88px;
+$font-4x: 59.29px;

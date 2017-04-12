@@ -1,0 +1,136 @@
+@import url(//fonts.googleapis.com/css?family=Roboto:700,400,100);
+
+html {
+  max-width: 2000px;
+}
+
+h1,h2,h3,h4,p {
+    font-family: RobotoDraft,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;    
+}
+
+h2, h3, h4 {
+    font-size: $font-2x;
+}
+
+p {
+    font-size:$font-1x;
+}
+
+h1 {
+    font-weight: 100;
+    font-size:$font-3x;
+}
+
+hr {
+    border-top: 1px solid #ccc;
+}
+
+.navbar li a {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    -webkit-transition: all 0.3s ease-in-out;
+    line-height: 20px;
+    color: white;
+}
+
+// override material.min.css
+.navbar .navbar-nav>li>a {
+    color: white;
+
+    &:hover {
+        background: rgba(255,255,255,0.2);
+    }
+}
+.navbar {
+    margin: 0;
+
+    .container-fluid {
+        // max width of nav content
+    }
+}
+
+a.navbar-brand {
+    margin-top: -5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: $font-3x;
+    -webkit-transition: all 0.3s ease-in-out;
+    line-height: 20px;
+    color: white;
+
+    img {
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+
+// override material button styling
+.btn:not(.btn-link):not(.btn-flat) {
+    background-color: $color-btn-grey;
+    border-color: $color-btn-border-grey;
+    color: #333;
+
+    &:hover {
+        background-color: darken($color-btn-grey, 25%);
+    }
+}
+
+.alt-btn.btn:not(.btn-link):not(.btn-flat) {
+    color: #fff;
+    background-color: $site-dark-blue;
+    border-color: $alt-btn-border;
+
+    &:hover {
+        background-color:lighten($alt-btn-dark-blue, 25%);
+    }
+}
+
+
+.alt-background {
+    background: white;
+}
+
+.img-wrapper img {
+    margin: 10px auto;
+}
+
+.main-feature-gray {
+    background: #eee;
+}
+
+.lgScreenFix {
+    height: 700px;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+.lgScreenFix#section-benefits, .lgScreenFix#section-about {
+    margin-bottom: 0px;
+    height: 600px;
+}
+
+.lgScreenFix#section-header {
+
+    #site-title {
+        padding-top: 200px;
+    }
+
+    #downToAbout a {
+        display: none;
+    }
+}
+
+#section-terms, #section-privacy {
+    color: $main-text;
+}
+
+footer {
+
+    padding: 30px;
+    ul li a {
+        color: $alt-btn-dark-blue;    
+    }
+    
+}

@@ -1,6 +1,2 @@
 .DS_Store
-favicon.ico
 node_modules/
-static/assets
-static/projects
-vendor/

@@ -1,0 +1,272 @@
+/*
+Theme Name: Hellodart
+
+*/
+/*
+ * media query sizes based on bootstrap
+ * CSS:
+ * @media screen and (max-width: $screen-sm-max) {
+ *    display: none;
+ * }
+ * 
+ */
+/**
+ * colors
+ * 
+ */
+/**
+ * size variables
+ */
+@import url(//fonts.googleapis.com/css?family=Roboto:700,400,100);
+html {
+  max-width: 2000px; }
+
+h1, h2, h3, h4, p {
+  font-family: RobotoDraft,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 400; }
+
+h2, h3, h4 {
+  font-size: 28.88px; }
+
+p {
+  font-size: 16px; }
+
+h1 {
+  font-weight: 100;
+  font-size: 41.88px; }
+
+hr {
+  border-top: 1px solid #ccc; }
+
+.navbar li a {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  line-height: 20px;
+  color: white; }
+
+.navbar .navbar-nav > li > a {
+  color: white; }
+  .navbar .navbar-nav > li > a:hover {
+    background: rgba(255, 255, 255, 0.2); }
+
+.navbar {
+  margin: 0; }
+
+a.navbar-brand {
+  margin-top: -5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 41.88px;
+  -webkit-transition: all 0.3s ease-in-out;
+  line-height: 20px;
+  color: white; }
+  a.navbar-brand img {
+    display: inline-block;
+    margin-right: 10px; }
+
+.btn:not(.btn-link):not(.btn-flat) {
+  background-color: #e6e6e6;
+  border-color: #adadad;
+  color: #333; }
+  .btn:not(.btn-link):not(.btn-flat):hover {
+    background-color: #a6a6a6; }
+
+.alt-btn.btn:not(.btn-link):not(.btn-flat) {
+  color: #fff;
+  background-color: #022E51;
+  border-color: #204d74; }
+  .alt-btn.btn:not(.btn-link):not(.btn-flat):hover {
+    background-color: #64a0d4; }
+
+.alt-background {
+  background: white; }
+
+.img-wrapper img {
+  margin: 10px auto; }
+
+.main-feature-gray {
+  background: #eee; }
+
+.lgScreenFix {
+  height: 700px;
+  padding-top: 100px;
+  margin-bottom: 100px; }
+
+.lgScreenFix#section-benefits, .lgScreenFix#section-about {
+  margin-bottom: 0px;
+  height: 600px; }
+
+.lgScreenFix#section-header #site-title {
+  padding-top: 200px; }
+.lgScreenFix#section-header #downToAbout a {
+  display: none; }
+
+#section-terms, #section-privacy {
+  color: #666; }
+
+footer {
+  padding: 30px; }
+  footer ul li a {
+    color: #286090; }
+
+.bg-1 {
+  background: url("img/connected_compressed_crop.jpg") no-repeat fixed;
+  color: #fff;
+  background-size: cover; }
+
+.bg-2 {
+  background: url("img/site_footergradient_compressed.jpg") no-repeat center top fixed;
+  color: #fff;
+  background-size: cover; }
+
+#site-title {
+  margin-top: -100px; }
+  #site-title h1 {
+    font-size: 41.88px; }
+
+#cta-button {
+  background: transparent;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 16px;
+  color: white;
+  border: 3px solid white; }
+  #cta-button:hover {
+    background: rgba(255, 255, 255, 0.2); }
+
+.section-title {
+  text-transform: uppercase;
+  margin-top: 0;
+  font-weight: 700; }
+
+#downToAbout {
+  position: absolute;
+  bottom: 2%;
+  left: 48%; }
+
+#section-about {
+  padding-bottom: 50px !important;
+  color: #666; }
+
+#section-problem {
+  color: #666;
+  padding-top: 100px !important;
+  padding-bottom: 100px !important; }
+
+#raindrops {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+#section-solution-alt {
+  padding-top: 100px !important;
+  padding-bottom: 100px !important; }
+  #section-solution-alt .img-wrapper {
+    margin-bottom: 20px; }
+  #section-solution-alt #analytics-fix {
+    margin-top: 30px; }
+
+#section-solution-alt {
+  color: #666; }
+
+#section-benefits {
+  color: #666; }
+  #section-benefits i {
+    padding: 20px; }
+  #section-benefits .fa-clock-o {
+    color: #FC644D; }
+  #section-benefits .fa-search {
+    color: #FED531; }
+  #section-benefits .fa-money {
+    color: #9BCC40; }
+  #section-benefits .btn-lead-in {
+    font-size: 1.5em;
+    margin-top: 30px; }
+
+#partners-banner {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #666; }
+  #partners-banner .img-wrapper img {
+    width: 150px;
+    border-radius: 50%; }
+
+@media (min-width: 767px) {
+  .navbar.navbar, .navbar-default.navbar {
+    background: transparent;
+    padding: 20px 10px;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out; }
+
+  .nav-fill.navbar.navbar, .navbar-default.navbar {
+    padding: 0;
+    background: #022E51;
+    border-bottom: 2px solid white; } }
+@media (max-width: 991px) {
+  .bg-1 {
+    background: url("img/site_footergradient_compressed.jpg") no-repeat center top fixed;
+    color: #fff;
+    background-size: cover; } }
+#section-leadership {
+  padding-bottom: 50px !important; }
+
+#section-leadership, #section-ourstory {
+  color: #666;
+  padding-top: 100px !important;
+  padding-bottom: 100px !important; }
+
+#julia-fix img {
+  border-radius: 50%; }
+
+#david-fix img {
+  overflow: hidden;
+  border-radius: 50%; }
+
+.imgRow {
+  padding: 25px 0px; }
+
+#ninja_forms_form_1 .hp-wrap {
+  display: none; }
+#ninja_forms_form_1 .ninja-forms-required-items {
+  text-align: center; }
+#ninja_forms_form_1 .btn {
+  color: #fff;
+  background-color: #022E51;
+  border-color: #204d74; }
+  #ninja_forms_form_1 .btn:hover {
+    background-color: #64a0d4; }
+
+#section-contactform {
+  margin: 0;
+  color: #666; }
+
+div[id^="metadata101"] {
+  color: #666; }
+
+#product-header {
+  color: #666;
+  margin-top: 50px; }
+  #product-header .row .col-md-8 {
+    margin-bottom: -60px; }
+
+.product-img {
+  -webkit-box-shadow: 4px 6px 18px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 6px 18px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 6px 18px -5px rgba(0, 0, 0, 0.75); }
+
+#section-collection, #section-cleanup, #section-analysis {
+  color: #666; }
+
+@media (max-width: 991px) {
+  .product-img {
+    margin-bottom: 50px; }
+
+  #product-header {
+    color: #666;
+    margin-top: 50px; }
+    #product-header .row .col-md-8 {
+      margin-bottom: 0px; } }
+
+/*# sourceMappingURL=style.css.map */

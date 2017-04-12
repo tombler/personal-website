@@ -1,0 +1,25 @@
+#ninja_forms_form_1 {
+
+    .hp-wrap {
+        display:none;
+    }
+
+    .ninja-forms-required-items {
+        text-align: center;
+    }    
+
+    .btn {
+        color: #fff;
+        background-color: $site-dark-blue;
+        border-color: $alt-btn-border;
+
+        &:hover {
+            background-color:lighten($alt-btn-dark-blue, 25%);
+        }
+    }
+}
+
+#section-contactform {
+    margin: 0;
+    color: $main-text;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "thomasgriffey.com",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss   static/css/main.css",
+    "watch-css": "nodemon -e scss -x 'npm run build-css'",
+    "clean": "rm -rf static/css && mkdir -p static/css",
+    "build": "npm run clean && npm run build-css",
+    "watch": "npm run clean && npm run watch-css & nodemon server -e js",
+    "start": "node server"
+  },
+  "author": "Tom Griffey",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.5.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "express": "^4.14.1",
+    "pug": "^2.0.0-beta11"
+  }
+}

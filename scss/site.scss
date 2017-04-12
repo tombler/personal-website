@@ -1,0 +1,152 @@
+// override bootstrap pre formatting
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: inherit;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: normal;
+    word-wrap: normal;
+    background-color: inherit;
+    border: none;
+    border-radius: 0px;
+}
+
+body {
+    font-family: $main_font;
+    background: $bg2;
+}
+
+a {
+    color:$constant_red;
+    border-bottom: 1px solid $constant_red;
+    font-weight: bold;
+    padding-bottom: 3px;
+
+    &:hover, &:active, &:visited, &:focus {
+        color:$constant_dark_red;    
+        text-decoration: none;
+        padding-bottom: 3px;
+        border-bottom: 1px solid $constant_dark_red;
+    }
+}
+
+a.alt {
+    color: $highlight_pink;
+    border-bottom: 1px solid $highlight_pink;
+    &:hover, &:active, &:visited, &:focus {
+        color:$highlight_pink_darken;    
+        border-bottom: 1px solid $highlight_pink_darken;
+    }
+}
+
+footer {
+    text-align: center;
+    margin: 50px auto;
+    color: $title_blue;
+}
+
+.popover {
+    // override bootstrap popover styling
+    position: absolute;
+    top: 0;
+    left: 0;
+    // z-index: auto;
+    display: none;
+    padding: 1px;
+    font-family: inherit;
+    font-size: $reduce_size;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    white-space: normal;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 0px;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    line-break: auto;
+}
+
+
+
+/* Shutter Out Horizontal */
+.hvr-shutter-out-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  background: $bg1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-shutter-out-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // opacity: 0.7;
+  background: $bg2;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+  color: white;
+}
+.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  z-index: 999;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active, .hvr-grow:visited {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  z-index: 1000;
+}
+
+.hvr-grow-clicked {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  z-index: 1000;
+}

@@ -1,0 +1,37 @@
+$bg1: #FFFFFF;
+// $bg2: #318495;
+$bg2: #272822;
+
+// Text colors, imitation of Sublime's Mac Classic theme
+// https://github.com/twolfson/sublime-files/blob/master/Packages/Color%20Scheme%20-%20Default/Mac%20Classic.tmTheme
+$bracket_tags_blue: #0000FF; 
+$bracket_tags_deep_blue: #0000CD;
+$constant_red: #C5060B;
+$constant_purple_blue: #585CF6;
+$variable_teal: #318495;
+$constant_green: #036A07;
+$constant_lime_green: #26B31A;
+$func_name_deep_blue: #0000A2;
+$func_arg_gray: #70727E;
+$constant_dark_red: #990000;
+$hr_gray: #eee;
+
+// Monokai color theme for project popovers
+// http://www.colourlovers.com/palette/1718713/Monokai
+$bg_black: #272822;
+$title_blue: #66D9EF;
+$param_green: #A6E22E;
+$param_green_darken: #5A9600;
+$white_maintext: #FFFFFF;
+$highlight_pink: #F92672;
+$highlight_pink_darken: #F92672;
+
+
+// fonts
+$main_font: Menlo,Monaco,Consolas,"Courier New",monospace;
+
+$reduce_size: 0.8em;
+$descrip_size: 1.2em;
+$sub_header_size: 1.5em;
+$icon_size: 1.8em;
+$site_header_size: 5em;

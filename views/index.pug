@@ -1,0 +1,61 @@
+include includes/header.pug
+body
+div#fullpage
+    div.section.section-hero.bg1.container
+        div.row
+            div.col-md-6.col-md-offset-6.col-sm-12
+                div.header-wrapper
+                    h1.site-header &lt;Tom Griffey/> 
+                    h3
+                        pre
+                            code
+                            |   &lt;Software Developer/>
+                            |   &lt;Musician/>
+                            |   &lt;Educator/>
+                
+    div.section.section-code1.bg1.container
+        div.row
+            div.col-sm-4.text-center
+                img.feat-img(src="assets/Profile-rounded-01.png")
+            div.col-sm-7
+                h1.section-header function Describe() { 
+                p.descrip Tom Griffey is a full stack software developer, musician and former educator from Boston, MA. He has a passion for writing and producing music, collaborating on software projects, and developing youth through the arts. In his spare time he can be found boxing, DJing, brewing beer, and playing the guitar way too loud. Currently, Tom lives in Los Angeles, CA and works as a software developer at #[a(href="https://www.dartdata.io" target="_blank") Dart Music, Inc].
+                h1.section-header }
+
+    div.section.section-projects.bg2.container
+        div.row
+            div.col-md-8.col-md-offset-3
+                h1.section-header-alt function Featured_Projects() { 
+        div.row
+            for proj in projects
+                div.col-md-3.sub-header.text-center.hvr-grow
+                    a.alt.project(style="white-space:pre;")= proj.title
+                        | #[div.img-wrapper #[img.feat-img(src=proj.img_url)]]
+                    div.popover.popover-temp(role="tooltip")
+                        div.arrow
+                        i.fa.fa-times.pull-right.popover-dismiss
+                        h3.project-title= proj.title
+                        div.popover-content
+                            p= proj.descrip
+                            if proj.private_repo
+                                i # Private repository. Code samples available on request.
+                            else
+                                a(href=proj.url target="_blank") See it live
+        div.row
+            div.col-md-8.col-md-offset-3
+                h1.section-header-alt }
+
+    div.section.section-code2.bg1.container
+        div.row
+            div.col-md-6.col-md-offset-3
+                h1.section-header function Contact() { 
+            div.col-md-8.col-md-offset-2
+                div.row
+                    for c in contactLinks
+                        div.col-md-3.sub-header
+                            a(href=c.url target="_blank" style="white-space:pre;")= c.title
+                                | #[div.icon #[i.fa(class=c.iconClass)]]
+            div.col-md-6.col-md-offset-3                           
+                h1.section-header }
+
+include includes/footer.pug

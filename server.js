@@ -82,7 +82,7 @@ app.get('/resume', function (req, res) {
     // res.setHeader('Content-Disposition', 'attachment; filename=tom_griffey_resume.pdf');
     // file.pipe(res);
 
-    fs.readFile('./static/assets/tom_griffey_resume.pdf', function (err,data){
+    fs.readFile('./static/assets/tom_griffey_resume_may_2017.pdf', function (err,data){
         res.contentType("application/pdf");
         res.send(data);
     });

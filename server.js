@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
         projects: [
             {
                 title: 'Synthesys',
-                descrip: 'App for composing music in the browser using the Web Audio API, AngularJS and Bootstrap.',
+                descrip: 'App for composing music in Google Chrome using the Web Audio API, AngularJS and Bootstrap.',
                 img_url: 'assets/synthesys_sq.png',
                 url: 'https://synthesys.firebaseapp.com',
                 private_repo: false

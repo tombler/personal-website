@@ -192,8 +192,10 @@ footer {
   padding-top: 10px; }
 
 img.feat-img {
-  max-width: 80%;
-  max-height: 300px; }
+  border-radius: 5px;
+  -webkit-box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75); }
 
 .project:hover, .fa-times:hover {
   cursor: pointer; }
